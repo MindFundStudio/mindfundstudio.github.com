@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+$ColorA: #cf67e0;
+$ColorB: #423997;
+$Highlight: #D26EF5;
+$TranslucentPurple: rgba(210, 110, 245, 0.35);
+$TranslucentPurple2: rgba(210, 110, 245, 0.5);
+
+html, body {
+
+  /* Text */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+
+  /* Background Gradient */
+  background-color: $ColorB;
+  background-image: -moz-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  background-image: -webkit-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  background-image: -o-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  background-image: -ms-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  background-image: radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding-top: 10em;
+  padding-bottom: 7em;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+#projects {
+  padding-bottom: 7em;
+
+  img {
+    height: 120px;
+  }
+
+  h1 {
+    margin-bottom: 1.6em;
+    font-size: 2.4em;
+  }
+
+  p {
+    line-height: 4px;
+  }
+
+  /* unvisited link */
+  a:link {
+      color: $Highlight;
+  }
+
+  /* visited link */
+  a:visited {
+      color: #7F6EF5;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: #FF4D9B;
+  }
+
+  /* selected link */
+  a:active {
+      color: #FF4D9B;
+  }
+
+}
+
+#sign-up {
+
+  input[type=text] {
+    display: inline-block;
+    padding: 1.2em;
+    font-size: 1.4em;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: white;
+    width: 80%;
+    height: 60px;
+  }
+
+  input[type=submit] {
+    display: inline-block;
+    font-size: 1.4em;
+    background-color: rgba(182, 19, 254, 0.18);
+    padding: 0.5em 1.2em;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 60px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $TranslucentPurple2;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $TranslucentPurple2;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $TranslucentPurple2;
+  }
+
+  :-ms-input-placeholder {
+    color: $TranslucentPurple2;
+  }
+
+}
+
+footer {
+
+}
+
+.verticalLine {
+    border-left: 1px solid $TranslucentPurple;
+}
+
+/* responsive style ----------------------------------------------------------------- */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+  header {
+    padding-top: 10em;
+    padding-bottom: 7em;
+
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  #projects {
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    .verticalLine {
+        border-left: 0;
+    }
+
+    .project {
+      padding-bottom: 80px;
+    }
+
+    padding-bottom: 20px;
+  }
+
+  #sign-up {
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 1.1em;
+    }
+
+    input[type=text] {
+      padding: 1.2em;
+      font-size: 1em;
+    }
+
+    input[type=submit] {
+      display: inline-block;
+      font-size: 1.1em;
+      width: 80%;
+      height: 54px;
+    }
+  }
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
