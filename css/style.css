@@ -20,6 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding-top: 10em;
   padding-bottom: 7em; }
+  header img {
+    margin-bottom: 10px; }
   header h1 {
     font-size: 3em; }
 
@@ -52,7 +54,7 @@ header {
   box-shadow: none;
   background-color: transparent;
   border-radius: 5px;
-  border-color: white;
+  border-color: rgba(227, 172, 246, 0.9);
   width: 80%;
   height: 60px; }
 #sign-up input[type=submit] {
@@ -61,19 +63,24 @@ header {
   background-color: rgba(182, 19, 254, 0.18);
   padding: 0.5em 1.2em;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(227, 172, 246, 0.9);
   border-radius: 5px;
   height: 60px; }
 #sign-up ::-webkit-input-placeholder {
-  color: rgba(210, 110, 245, 0.5); }
+  color: rgba(227, 172, 246, 0.9); }
 #sign-up :-moz-placeholder {
   /* Firefox 18- */
-  color: rgba(210, 110, 245, 0.5); }
+  color: rgba(227, 172, 246, 0.9); }
 #sign-up ::-moz-placeholder {
   /* Firefox 19+ */
-  color: rgba(210, 110, 245, 0.5); }
+  color: rgba(227, 172, 246, 0.9); }
 #sign-up :-ms-input-placeholder {
-  color: rgba(210, 110, 245, 0.5); }
+  color: rgba(227, 172, 246, 0.9); }
+
+footer {
+  color: rgba(227, 172, 246, 0.9);
+  padding-top: 100px;
+  padding-bottom: 30px; }
 
 .verticalLine {
   border-left: 1px solid rgba(210, 110, 245, 0.35); }

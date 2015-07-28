@@ -4,7 +4,7 @@ $ColorA: #cf67e0;
 $ColorB: #423997;
 $Highlight: #D26EF5;
 $TranslucentPurple: rgba(210, 110, 245, 0.35);
-$TranslucentPurple2: rgba(210, 110, 245, 0.5);
+$TranslucentPurple2: rgba(227, 172, 246, 0.9);
 
 html, body {
 
@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding-top: 10em;
   padding-bottom: 7em;
+
+  img {
+    margin-bottom: 10px;
+  }
 
   h1 {
     font-size: 3em;
@@ -84,7 +88,7 @@ header {
     box-shadow: none;
     background-color: transparent;
     border-radius: 5px;
-    border-color: white;
+    border-color: $TranslucentPurple2;
     width: 80%;
     height: 60px;
   }
@@ -95,7 +99,7 @@ header {
     background-color: rgba(182, 19, 254, 0.18);
     padding: 0.5em 1.2em;
     color: white;
-    border: 1px solid white;
+    border: 1px solid $TranslucentPurple2;
     border-radius: 5px;
     height: 60px;
   }
@@ -119,7 +123,9 @@ header {
 }
 
 footer {
-
+  color: $TranslucentPurple2;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .verticalLine {
