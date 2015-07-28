@@ -34,10 +34,15 @@ header {
   #projects img {
     height: 120px; }
   #projects h1 {
-    margin-bottom: 1.6em;
-    font-size: 2.4em; }
-  #projects p {
-    line-height: 4px; }
+    font-size: 2.4em;
+    margin-bottom: 1.3em; }
+  #projects .description h1 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em; }
+  #projects .description p {
+    color: rgba(227, 172, 246, 0.9);
+    line-height: 4px;
+    margin-bottom: 0.5em; }
   #projects a:link {
     color: #d26ef5; }
   #projects a:visited {
