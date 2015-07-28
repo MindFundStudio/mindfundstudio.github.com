@@ -46,6 +46,14 @@ header {
     color: #FF4D9B; }
   #projects a:active {
     color: #FF4D9B; }
+  #projects .project {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    #projects .project:hover {
+      transform: scale(1.1, 1.1);
+      z-index: 99; }
 
 #sign-up input[type=text] {
   display: inline-block;
@@ -83,7 +91,9 @@ footer {
   padding-bottom: 30px; }
 
 .verticalLine {
-  border-left: 1px solid rgba(210, 110, 245, 0.35); }
+  margin-left: 50%;
+  border-left: 1px solid rgba(210, 110, 245, 0.35);
+  height: 320px; }
 
 /* responsive style ----------------------------------------------------------------- */
 /* Large Devices, Wide Screens */
