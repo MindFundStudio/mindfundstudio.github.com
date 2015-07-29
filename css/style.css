@@ -130,5 +130,8 @@ footer {
     display: inline-block;
     font-size: 1.1em;
     width: 80%;
-    height: 54px; } }
+    height: 54px; }
+
+  .smallHide {
+    display: none; } }
 /* Extra Small Devices, Phones */
