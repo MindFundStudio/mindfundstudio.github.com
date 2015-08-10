@@ -4,6 +4,12 @@ html, body {
   color: white;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  padding-top: 140px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   /* Background Gradient */
   background-color: #423997;
   background-image: -moz-radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
@@ -17,48 +23,127 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
+.navigation {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+  height: 200px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .navigation.shrink {
+    height: 90px;
+    background-color: rgba(67, 60, 119, 0.95);
+    box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15); }
+    .navigation.shrink h1 {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .navigation.shrink img {
+      transform: scale(0.3);
+      margin-bottom: -4em; }
+    .navigation.shrink .dot {
+      transform: scale(0.5); }
+  .navigation .icon-button {
+    opacity: 0.3;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    .navigation .icon-button .dot {
+      opacity: 0;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      margin: 0 auto;
+      margin-bottom: 12px; }
+    .navigation .icon-button.selected {
+      opacity: 1.0; }
+      .navigation .icon-button.selected .dot {
+        opacity: 1.0; }
+  .navigation img {
+    transform-origin: top;
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .navigation h1 {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+
+.hide {
+  visibility: hidden; }
+
 header {
-  padding-top: 10em;
-  padding-bottom: 7em; }
+  padding-top: 20px; }
   header img {
     margin-bottom: 10px; }
   header h1 {
-    font-size: 3em; }
+    font-size: 2.2em; }
 
-#projects {
+#projects, #investments {
+  padding-top: 1.4em;
   padding-bottom: 7em;
   /* unvisited link */
   /* visited link */
   /* mouse over link */
   /* selected link */ }
-  #projects img {
-    height: 120px; }
-  #projects h1 {
+  #projects .logo, #investments .logo {
+    position: relative;
+    display: inline-block; }
+  #projects img, #investments img {
+    height: 120px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    #projects img.bg, #investments img.bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      margin-left: auto;
+      margin-right: auto; }
+  #projects h1, #investments h1 {
     font-size: 2.4em;
-    margin-bottom: 1.3em; }
-  #projects .description h1 {
+    margin-bottom: 2.2em; }
+  #projects .description h1, #investments .description h1 {
     font-size: 1.2em;
-    margin-bottom: 1.2em; }
-  #projects .description p {
+    margin-bottom: 1.4em; }
+  #projects .description p, #investments .description p {
     color: rgba(227, 172, 246, 0.9);
     line-height: 4px;
-    margin-bottom: 0.5em; }
-  #projects a:link {
+    margin-bottom: 1.6em; }
+  #projects .investments, #investments .investments {
+    margin-bottom: 5em; }
+  #projects a:link, #investments a:link {
     color: #d26ef5; }
-  #projects a:visited {
+  #projects a:visited, #investments a:visited {
     color: #7F6EF5; }
-  #projects a:hover {
+  #projects a:hover, #investments a:hover {
     color: #FF4D9B; }
-  #projects a:active {
+  #projects a:active, #investments a:active {
     color: #FF4D9B; }
-  #projects .project {
+  #projects .project, #investments .project {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
-    #projects .project:hover {
-      transform: scale(1.1, 1.1);
-      z-index: 99; }
+    #projects .project h1, #investments .project h1 {
+      margin-bottom: 0.5em; }
+    #projects .project:hover img, #investments .project:hover img {
+      opacity: 0; }
+    #projects .project:hover img.bg, #investments .project:hover img.bg {
+      opacity: 1; }
 
 #sign-up input[type=text] {
   display: inline-block;
@@ -100,24 +185,80 @@ footer {
   border-left: 1px solid rgba(210, 110, 245, 0.35);
   height: 320px; }
 
-/* responsive style ----------------------------------------------------------------- */
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-@media only screen and (max-width: 767px) {
+/* Transitions */
+main {
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+#mindfund {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+#mindfundstudio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.hideLeft {
+  left: -200% !important;
+  z-index: -1 !important;
+  opacity: 0; }
+
+.hideRight {
+  right: -200% !important;
+  opacity: 0; }
+
+/* Small screens */
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  .navigation {
+    height: 120px; }
+    .navigation img {
+      height: 50px;
+      width: auto; }
+    .navigation h1 {
+      font-size: 0.9em; }
+    .navigation .dot {
+      width: 6px !important;
+      height: 6px !important; }
+    .navigation.shrink {
+      height: 78px; }
+      .navigation.shrink h1 {
+        font-size: 0.8em;
+        margin-bottom: 0; }
+      .navigation.shrink img {
+        transform: scale(0.5) !important;
+        margin-bottom: -1.4em; }
+      .navigation.shrink .dot {
+        transform: scale(0.5); }
+
   header {
-    padding-top: 10em;
-    padding-bottom: 7em; }
+    padding-top: 1em; }
     header h1 {
       font-size: 2.5em; }
 
-  #projects {
+  #projects, #investments {
     padding-bottom: 20px; }
-    #projects h1 {
-      font-size: 2.2em; }
-    #projects .verticalLine {
+    #projects h1, #investments h1 {
+      font-size: 1.8em; }
+    #projects .verticalLine, #investments .verticalLine {
       border-left: 0; }
-    #projects .project {
+    #projects .project, #investments .project {
       padding-bottom: 80px; }
 
   #sign-up h1 {
@@ -134,4 +275,15 @@ footer {
 
   .smallHide {
     display: none; } }
-/* Extra Small Devices, Phones */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* Large screens */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* XLarge screens */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* XXLarge screens */
+/* min-width 1921px, xxlarge screens */
