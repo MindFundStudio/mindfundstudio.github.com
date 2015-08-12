@@ -145,15 +145,15 @@ header {
     #projects .project:hover img.bg, #investments .project:hover img.bg {
       opacity: 1; }
 
-#sign-up input[type=text] {
+#sign-up .left {
+  text-align: left; }
+#sign-up input[type=email] {
   display: inline-block;
-  padding: 1.2em;
   font-size: 1.4em;
   box-shadow: none;
   background-color: transparent;
   border-radius: 5px;
   border-color: rgba(227, 172, 246, 0.9);
-  width: 80%;
   height: 60px; }
 #sign-up input[type=submit] {
   display: inline-block;

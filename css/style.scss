@@ -227,15 +227,17 @@ header {
 
 #sign-up {
 
-  input[type=text] {
+  .left {
+    text-align: left;
+  }
+
+  input[type=email] {
     display: inline-block;
-    padding: 1.2em;
     font-size: 1.4em;
     box-shadow: none;
     background-color: transparent;
     border-radius: 5px;
     border-color: $TranslucentPurple2;
-    width: 80%;
     height: 60px;
   }
 

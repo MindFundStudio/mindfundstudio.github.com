@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/jquery.transit.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/mailchimp.js"></script>
 </head>
 <body>
   <div class="navigation fixed">
@@ -171,9 +172,20 @@
       <section class="row" id="sign-up">
         <div class="large-12 medium-12 columns">
           <h1>Sign up for alerts to join our betas:</h1>
-          <form action="#">
-                <input type="text" placeholder="Enter your email to join our newsletter">
-                <input type="submit" value="Join">
+          <form action="http://mindfund.us11.list-manage.com/subscribe/post?u=adccfd1532ba00c6545dbaabe&amp;id=25f7e86f8d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="row">
+              <div class="large-7 medium-7 large-offset-2 medium-offset-2 columns">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required placeholder="Enter your email to join our newsletter">
+                <div class="signup_message"></div>
+              </div>
+              <div class="large-3 medium-3 columns left end">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_b536e068b6e57600f70199b45_6c06dd2172" tabindex="-1" value="">
+                </div>
+                <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe">
+              </div>
+            </div>
           </form>
         </div>
       </section>
