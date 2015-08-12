@@ -145,7 +145,7 @@ header {
     #projects .project:hover img.bg, #investments .project:hover img.bg {
       opacity: 1; }
     #projects .project.last, #investments .project.last {
-      margin-bottom: 5em; }
+      margin-bottom: 8em; }
 
 #sign-up .left {
   text-align: left; }
