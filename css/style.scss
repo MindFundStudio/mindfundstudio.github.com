@@ -221,6 +221,10 @@ header {
         opacity: 1;
       }
     }
+
+    &.last {
+      margin-bottom: 5em;
+    }
   }
 
 }
