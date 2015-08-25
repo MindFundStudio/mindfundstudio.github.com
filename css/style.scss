@@ -35,7 +35,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-.navigation {
+.navigationMobile {
+  display: none;
+}
+
+.navigation, .navigationMobile {
   background-color: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9999;
@@ -47,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
-  &.shrink, &.mobileShrink {
+  &.shrink {
     height: 90px;
     background-color: rgba(38/100 * 7/10 * 255, 34/100 * 7/10 * 255, 67/100 * 7/10 * 255, 0.95);
     box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15);
@@ -64,6 +68,18 @@ h1, h2, h3, h4, h5, h6 {
 
     .dot {
       transform: scale(0.5);
+    }
+  }
+
+  .logo {
+    &.mindfund {
+      width: 50px;
+      height: 45px;
+    }
+
+    &.mindfundstudio {
+      width: 63px;
+      height: 45px;
     }
   }
 
@@ -341,13 +357,15 @@ main {
 @media only screen and (max-width: 40em) {
 
   .navigation {
+    display: none;
+  }
 
-    height: 120px;
-
-    img {
-      height: 50px;
-      width: auto;
-    }
+  .navigationMobile {
+    display: block;
+    height: 90px;
+    background-color: rgba(38/100 * 7/10 * 255, 34/100 * 7/10 * 255, 67/100 * 7/10 * 255, 0.95);
+    box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15);
+    font-size: 0.8em;
 
     h1 {
       font-size: 0.9em;
@@ -358,23 +376,19 @@ main {
       height: 6px !important;
     }
 
-    &.shrink, &.mobileShrink {
 
-      height: 78px;
+    h1 {
+      font-size: 1em;
+      margin-bottom: 0;
+    }
 
-      h1 {
-        font-size: 0.8em;
-        margin-bottom: 0;
-      }
+    img {
+      margin-top: -3px;
+      margin-bottom: -1px;
+    }
 
-      img {
-        transform: scale(0.3) !important;
-        margin-bottom: -1.4em;
-      }
-
-      .dot {
-        transform: scale(0.5);
-      }
+    .dot {
+      transform: scale(0.5);
     }
   }
 

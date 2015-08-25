@@ -23,7 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
-.navigation {
+.navigationMobile {
+  display: none; }
+
+.navigation, .navigationMobile {
   background-color: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9999;
@@ -33,26 +36,32 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  .navigation.shrink, .navigation.mobileShrink {
+  .navigation.shrink, .navigationMobile.shrink {
     height: 90px;
     background-color: rgba(67, 60, 119, 0.95);
     box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15); }
-    .navigation.shrink h1, .navigation.mobileShrink h1 {
+    .navigation.shrink h1, .navigationMobile.shrink h1 {
       font-size: 1em;
       margin-bottom: 0; }
-    .navigation.shrink img, .navigation.mobileShrink img {
+    .navigation.shrink img, .navigationMobile.shrink img {
       transform: scale(0.3);
       margin-bottom: -4em; }
-    .navigation.shrink .dot, .navigation.mobileShrink .dot {
+    .navigation.shrink .dot, .navigationMobile.shrink .dot {
       transform: scale(0.5); }
-  .navigation .icon-button {
+  .navigation .logo.mindfund, .navigationMobile .logo.mindfund {
+    width: 50px;
+    height: 45px; }
+  .navigation .logo.mindfundstudio, .navigationMobile .logo.mindfundstudio {
+    width: 63px;
+    height: 45px; }
+  .navigation .icon-button, .navigationMobile .icon-button {
     opacity: 0.3;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-    .navigation .icon-button .dot {
+    .navigation .icon-button .dot, .navigationMobile .icon-button .dot {
       opacity: 0;
       border-radius: 50%;
       width: 10px;
@@ -60,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
       background-color: white;
       margin: 0 auto;
       margin-bottom: 12px; }
-    .navigation .icon-button.selected {
+    .navigation .icon-button.selected, .navigationMobile .icon-button.selected {
       opacity: 1.0; }
-      .navigation .icon-button.selected .dot {
+      .navigation .icon-button.selected .dot, .navigationMobile .icon-button.selected .dot {
         opacity: 1.0; }
-  .navigation img {
+  .navigation img, .navigationMobile img {
     transform-origin: top;
     transform: scale(1);
     -webkit-transition: all 0.3s ease-out;
@@ -72,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-  .navigation h1 {
+  .navigation h1, .navigationMobile h1 {
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -229,25 +238,27 @@ main {
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
   .navigation {
-    height: 120px; }
-    .navigation img {
-      height: 50px;
-      width: auto; }
-    .navigation h1 {
+    display: none; }
+
+  .navigationMobile {
+    display: block;
+    height: 90px;
+    background-color: rgba(67, 60, 119, 0.95);
+    box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15);
+    font-size: 0.8em; }
+    .navigationMobile h1 {
       font-size: 0.9em; }
-    .navigation .dot {
+    .navigationMobile .dot {
       width: 6px !important;
       height: 6px !important; }
-    .navigation.shrink, .navigation.mobileShrink {
-      height: 78px; }
-      .navigation.shrink h1, .navigation.mobileShrink h1 {
-        font-size: 0.8em;
-        margin-bottom: 0; }
-      .navigation.shrink img, .navigation.mobileShrink img {
-        transform: scale(0.3) !important;
-        margin-bottom: -1.4em; }
-      .navigation.shrink .dot, .navigation.mobileShrink .dot {
-        transform: scale(0.5); }
+    .navigationMobile h1 {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .navigationMobile img {
+      margin-top: -3px;
+      margin-bottom: -1px; }
+    .navigationMobile .dot {
+      transform: scale(0.5); }
 
   body {
     padding-top: 20px; }
