@@ -3,10 +3,6 @@ $ ->
   window.addEventListener 'gesturechange', (e) ->
     console.log("LALA")
 
-  document.addEventListener 'touchmove', (e) ->
-    console.log "lolo"
-    e.preventDefault()
-
   # Shrink navigation bar
   $(window).scroll () ->
     top = $(document).scrollTop()

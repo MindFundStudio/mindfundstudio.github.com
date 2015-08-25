@@ -4,10 +4,6 @@
     window.addEventListener('gesturechange', function(e) {
       return console.log("LALA");
     });
-    document.addEventListener('touchmove', function(e) {
-      console.log("lolo");
-      return e.preventDefault();
-    });
     $(window).scroll(function() {
       var top;
       top = $(document).scrollTop();
