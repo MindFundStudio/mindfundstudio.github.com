@@ -1,8 +1,5 @@
 $ ->
 
-  window.addEventListener 'gesturechange', (e) ->
-    console.log("LALA")
-
   # Shrink navigation bar
   $(window).scroll () ->
     top = $(document).scrollTop()
