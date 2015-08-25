@@ -1,7 +1,8 @@
 $ ->
 
-  # Shrink navigation bar
-  $(window).scroll () ->
+  document.addEventListener "touchmove", scrollStart, false
+
+  onScroll = () ->
     top = $(document).scrollTop()
     console.log(top)
 
@@ -9,6 +10,15 @@ $ ->
       $('.navigation').addClass 'shrink';
     else
       $('.navigation').removeClass 'shrink';
+
+  scrollStart = (e) ->
+    onScroll()
+
+
+  # Shrink navigation bar
+  $(window).scroll () ->
+    onScroll()
+
 
   # Project click
   $('.project').on 'click', (e) ->
