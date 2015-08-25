@@ -259,6 +259,12 @@ main {
       margin-bottom: -1px; }
     .navigationMobile .dot {
       transform: scale(0.5); }
+    .navigationMobile .logo.mindfund {
+      width: 25px;
+      height: 22.5px; }
+    .navigationMobile .logo.mindfundstudio {
+      width: 31.5px;
+      height: 22.5px; }
 
   body {
     padding-top: 20px; }
