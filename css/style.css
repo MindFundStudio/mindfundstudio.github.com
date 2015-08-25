@@ -242,7 +242,7 @@ main {
 
   .navigationMobile {
     display: block;
-    height: 90px;
+    height: 66px;
     background-color: rgba(67, 60, 119, 0.95);
     box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15);
     font-size: 0.8em; }
