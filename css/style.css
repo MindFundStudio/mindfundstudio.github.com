@@ -33,17 +33,17 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  .navigation.shrink {
+  .navigation.shrink, .navigation.mobileShrink {
     height: 90px;
     background-color: rgba(67, 60, 119, 0.95);
     box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15); }
-    .navigation.shrink h1 {
+    .navigation.shrink h1, .navigation.mobileShrink h1 {
       font-size: 1em;
       margin-bottom: 0; }
-    .navigation.shrink img {
+    .navigation.shrink img, .navigation.mobileShrink img {
       transform: scale(0.3);
       margin-bottom: -4em; }
-    .navigation.shrink .dot {
+    .navigation.shrink .dot, .navigation.mobileShrink .dot {
       transform: scale(0.5); }
   .navigation .icon-button {
     opacity: 0.3;
@@ -238,16 +238,19 @@ main {
     .navigation .dot {
       width: 6px !important;
       height: 6px !important; }
-    .navigation.shrink {
+    .navigation.shrink, .navigation.mobileShrink {
       height: 78px; }
-      .navigation.shrink h1 {
+      .navigation.shrink h1, .navigation.mobileShrink h1 {
         font-size: 0.8em;
         margin-bottom: 0; }
-      .navigation.shrink img {
+      .navigation.shrink img, .navigation.mobileShrink img {
         transform: scale(0.5) !important;
         margin-bottom: -1.4em; }
-      .navigation.shrink .dot {
+      .navigation.shrink .dot, .navigation.mobileShrink .dot {
         transform: scale(0.5); }
+
+  body {
+    padding-top: 20px; }
 
   header {
     padding-top: 1em; }

@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
-  &.shrink {
+  &.shrink, &.mobileShrink {
     height: 90px;
     background-color: rgba(38/100 * 7/10 * 255, 34/100 * 7/10 * 255, 67/100 * 7/10 * 255, 0.95);
     box-shadow: 0 2px 3px rgba(25, 20, 25, 0.15);
@@ -358,7 +358,7 @@ main {
       height: 6px !important;
     }
 
-    &.shrink {
+    &.shrink, &.mobileShrink {
 
       height: 78px;
 
@@ -378,14 +378,16 @@ main {
     }
   }
 
+  body {
+    padding-top: 20px;
+  }
+
   header {
     padding-top: 1em;
 
     h1 {
       font-size: 2.5em;
     }
-
-
   }
 
   #projects, #investments {
