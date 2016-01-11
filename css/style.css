@@ -232,7 +232,8 @@ main {
 
 .hideRight {
   right: -200% !important;
-  opacity: 0; }
+  opacity: 0;
+  position: fixed !important; }
 
 /* Small screens */
 /* Define mobile styles */
