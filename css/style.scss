@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
 
   padding-top: 20px;
-
+  z-index: 999 !important;
 
   img {
     margin-bottom: 10px;
@@ -167,7 +167,7 @@ header {
 
     &.bg {
       position: absolute;
-      top: 0;
+      // top: 0;
       left: 0;
       right: 0;
       opacity: 0;
@@ -314,7 +314,6 @@ main {
 
 #mindfund {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   z-index: 999;
@@ -327,7 +326,6 @@ main {
 
 #mindfundstudio {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
 
@@ -345,7 +343,7 @@ main {
 
 .hideRight {
   right: -200% !important;
-  opacity: 0;
+  opacity: -1;
 }
 
 

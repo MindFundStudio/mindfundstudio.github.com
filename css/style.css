@@ -116,7 +116,6 @@ header {
     transition: all .5s ease-in-out; }
     #projects img.bg, #investments img.bg {
       position: absolute;
-      top: 0;
       left: 0;
       right: 0;
       opacity: 0;
@@ -206,10 +205,9 @@ main {
 
 #mindfund {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 0;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -217,7 +215,6 @@ main {
 
 #mindfundstudio {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   -webkit-transition: all .3s ease-in-out;
@@ -228,7 +225,8 @@ main {
 .hideLeft {
   left: -200% !important;
   z-index: -1 !important;
-  opacity: 0; }
+  opacity: 0;
+  visibility: hidden; }
 
 .hideRight {
   right: -200% !important;
