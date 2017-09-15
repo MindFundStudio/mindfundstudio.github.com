@@ -23,7 +23,7 @@ html, body {
   /* Background Gradient */
   background-color: $ColorB;
   background-image: -moz-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
-  background-image: -webkit-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
+  // background-image: -webkit-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
   background-image: -o-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
   background-image: -ms-radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);
   background-image: radial-gradient(100% 100%, ellipse farthest-side, $ColorA, $ColorB 130%);

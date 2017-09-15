@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 html, body {
   /* Text */
-  color: white;
+  color:white;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding-top: 140px;
@@ -11,17 +11,24 @@ html, body {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   /* Background Gradient */
-  background-color: #423997;
-  background-image: -moz-radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
-  background-image: -webkit-radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
-  background-image: -o-radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
-  background-image: -ms-radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
-  background-image: radial-gradient(100% 100%, ellipse farthest-side, #cf67e0, #423997 130%);
+background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/***  
+background: #FFEEEE;  
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+***/
+
+
+
+
   background-attachment: fixed; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: white;
-  font-family: 'Roboto', sans-serif; }
+color:white;
+font-family: 'Roboto', sans-serif; }
 
 .navigationMobile {
   display: none; }
@@ -187,8 +194,7 @@ header {
   color: rgba(227, 172, 246, 0.9); }
 
 footer {
-  color: rgba(227, 172, 246, 0.9);
-  padding-top: 100px;
+  padding-top: 280px;
   padding-bottom: 30px; }
 
 .verticalLine {
